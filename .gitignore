@@ -1,0 +1,13 @@
+/BigInt472/BigInt472.csproj
+.idea
+bin/
+obj/
+/build/
+**/packages/
+*.sln.DotSettings.user
+.DS_Store
+*.user
+*.suo
+**/.vs
+**/launchSettings.json
+*.orig

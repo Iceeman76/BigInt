@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script>
+		function calc(digits) {
+
+			let s = new Date();
+
+			let d = BigInt(digits);
+			let i = 1n;
+			let x = 3n * (10n ** (d + 20n));
+			let pi = x;
+
+			while (x > 0) {
+				x = x * i / ((i + 1n) * 4n);
+				pi += x / (i + 2n);
+				i += 2n;
+			}
+
+			let r = pi / (10n ** 20n);
+			document.getElementById("result").innerText = ((new Date() - s) / 1000).toFixed(3);
+		}
+	</script>
+</head>
+<body>
+	<button onclick="calc(25000);">Calculate</button>
+	<br />
+	Execution time: <span id="result"></span>
+</body>
+</html>
