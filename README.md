@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/bigint-github-social-preview.png" alt="BigInt logo" width="550" />
+</div>
+
 # BigInt9 — Comparing π Algorithms
 
 A C# console application that calculates π using two algorithms and compares their execution times and results. Both implementations use `System.Numerics.BigInteger` with integer arithmetic.
