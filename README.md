@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/bigint-github-social-preview.png" alt="BigInt logo" width="550" />
+  <img src="assets/bigint-github-social-preview.png" alt="BigInt logo" width="1040" />
 </div>
 
 # BigInt9 — Comparing π Algorithms
