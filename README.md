@@ -10,6 +10,17 @@ A C# console application that calculates π using two algorithms and compares th
 
 - .NET 10 SDK
 
+## Build and automated checks
+
+```powershell
+dotnet restore BigInt.slnx
+dotnet build BigInt.slnx --configuration Release --no-restore
+```
+
+GitHub Actions builds the solution and runs Gitleaks on pushes and pull requests. Gitleaks also runs weekly and can be started manually. Dependabot checks NuGet dependencies and GitHub Actions weekly.
+
+Keep local secrets in ignored files such as `.env` or `secrets.json`. Only commit environment templates with placeholder values. Ignore rules do not remove files already tracked by Git.
+
 ## Run
 
 From the repository root:
@@ -96,3 +107,7 @@ The returned `BigInteger` represents π scaled by `10^digits`, without a decimal
 ## Change the precision
 
 Edit the `digits` constant in `Program.Main`. The default is `100_000`. Checking more decimal places requires a longer reference file.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
